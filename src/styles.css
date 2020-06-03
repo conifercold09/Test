@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+   box-sizing: border-box;
+   }
+html{
+    height: 100%;
+}
+ a{
+     color: blue;
+ }
+ a:hover{
+     color: blueviolet;
+ }
+ .shadow{
+     box-shadow: 0 8px 12px;
+ }
+ .section-container {
+     padding: 30px;
+ }
+ body{
+    font-family: 'Source Sans Pro', sans-serif;    
+     background-color:grey;
+     color: white;
+     height: 100%;
+
+ }
+
+ .card-theme {
+     background-color: darkblack;
+     border: none;
+     border-radius: 2px;
+ }
+
+ .card-heading-theme{
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
+padding: 12px;
+
+ }
+
+ .card-body-theme{
+     background-color: rgb(40, 40, 73);
+
+ }
+
+ .cards{
+     display: flex;
+     flex-direction: column ;
+ }
+
+ .section-container{
+     padding: 30px;
+     color:gray;
+     background-color:rgb(86, 88, 81);
+ }

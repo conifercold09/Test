@@ -1,0 +1,33 @@
+<div class="section-container">
+    <h2> Latest Orders</h2>
+    <table class="table table-inverse table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Customer</th>
+                <th>Amount</th>
+                <th>Order Placed</th>
+                <th>Order Fulfilled</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <th>{{order.id}}</th>
+                <th>{{order.customer.name}}</th>
+                <th>{{order.total}}</th>
+                <th>{{order.placed | date: 'medium'}}</th>
+                <th>{{order.fulfilled | date:'short' }}</th>
+                <th>{{order.completed}}</th>
+
+            </tr>
+        </tbody>
+    </table>
+    <app-pagination (goPage) ="goToPage($event)"
+            (goPrev) = "goToPrevious()"
+            (goNext)="goToNext()"
+            [page] ="page"
+            [perPage]="limit"
+            [count]="total" >
+    </app-pagination>
+</div>
