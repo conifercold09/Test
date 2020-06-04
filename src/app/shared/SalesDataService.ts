@@ -12,5 +12,6 @@ public SUGARLEVELS_API = `${this.API}`;
 constructor(private http: HttpClient){}
 getOrder(page:number,limit:number):Observable<Array<Order>>{
     return this.http.get<Array<Order>>(this.API+'/'+page+'/'+limit);
-    }
+    
+}
 }
