@@ -1,4 +1,0 @@
-{
-    "appService.defaultWebAppToDeploy": "/subscriptions/90e6246e-43e5-49bc-a210-82aee2196e1c/resourceGroups/ProductDashboardWeb-rg/providers/Microsoft.Web/sites/ProductDashboardWeb",
-    "appService.deploySubpath": "."
-}
